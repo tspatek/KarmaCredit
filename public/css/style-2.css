@@ -1,0 +1,77 @@
+h1{
+    font-family: 'molle';
+    padding: 10px;
+    margin: 0px;
+    font-size: 5vw;
+    color: rgb(0, 0, 0);
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.4);
+}
+
+h2{
+    font-family: 'molle';
+    font-size: 6vw;
+    margin: 5px;
+}
+h3{
+    font-family: 'macondo';
+    font-size: 2vw;
+}
+
+p{
+    font-family: 'macondo';
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+#logo{
+    margin-top: 14px;
+    display: flex;
+    align-items: flex-start;
+    height: 20vw;
+    width: 60vw;
+}
+#dillo{
+    height: 100%;
+}
+
+#login-container{
+    position: fixed;
+    bottom: 5vw;
+    height: 70%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+#login-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:  rgba(250, 235, 215, 0.5);
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.4);
+}
+
+#login-form *{
+    margin: 8px;
+}
+
+td {
+    text-align: center;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    background-color: rgb(221, 193, 169);
+    background-image: url('../images/garden.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#submit {
+    background-color: gray;
+    border: 2px solid black;
+    text-decoration: none;
+}

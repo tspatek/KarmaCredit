@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Registration</title>
+    <link rel='stylesheet' href='./css/style-events.css'>
+    <link rel='stylesheet' href='./css/style-event-registration.css'>
+    <link rel="stylesheet" type="text/css" href="./css/navbar.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Macondo|Molle:400i" rel="stylesheet">
+</head>
+
+<body>
+    <div id='navbar'>
+        <div id="loginLinks">
+            <a href="login-2.html">Login</a> /
+            <a href="registration-user.html">Register</a>
+        </div>
+        <div id='dropdown'>
+
+            <img src='./images/menu.png' id='dropBtn'>
+            <div id="dropMenu">
+                <a href='gauge.html' class="menuItem">Your Dashboard</a>
+                <a href='events.html' class="menuItem">Events</a>
+                <a href='event-management.html' class="menuItem">Event Management</a>
+                <a href='event-registration.html' class="menuItem">Create Event</a>
+            </div>
+        </div>
+    </div>
+
+    <h1>Create Your Event</h1>
+    <form>
+        <fieldset>
+            <legend>
+                Event Info
+            </legend> Event Title
+            <br>
+            <input type="text" id="title" placeholder='Collecting Yarn'>
+            <br> Organization Name
+            <br>
+            <input type="text" id="organization" placeholder='Kitten Committee'>
+            <br> Event Description
+            <br>
+            <textarea id="event-description" placeholder="Describe your event here..."></textarea>
+            <br> Number of volunteers needed:
+            <br>
+            <input type="number" id="num-volunteers" placeholder='8'>
+
+            <fieldset>
+                <legend>When is the event?</legend>
+                Date
+                <input type="date" id="event-date">
+                <br> Start time:
+                <input type="time" id="event-time-start">
+                <br> End time:
+                <input type="time" id="event-time-end">
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Where is the event? </legend>
+                <!-- replace these with placeholders once  -->
+                Street Name &amp; Number
+                <br>
+                <input type="text" id="street" placeholder="123 Lafayette St.">
+                <br>Apt/Suite Number
+                <br>
+                <input type="text" id="number" placeholder="B">
+                <br> City
+                <br>
+                <input type="text" id='city' placeholder="Wheatridge">
+                <br> State
+                <br>
+                <input type="text" id='state' placeholder="CO">
+                <br> Zip Code
+                <br>
+                <input type="text" id='zip code' placeholder="80297">
+
+            </fieldset>
+            <fieldset>
+                <legend> Contact Info
+                </legend>
+                Contact Name
+                <br>
+                <input type="text" id="contact-name" placeholder="Karma Chameleon">
+                <br> Contact's Number
+                <br>
+                <input type="tel" id="contact-num" placeholder="287-2398">
+                <br>
+            </fieldset>
+        </fieldset>
+        <a href='postsuccess.html'> <div id='submit-btn'>Submit</div></a>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src='./js/event-registration.js'></script>
+    <script src="./js/navbar.js"></script>
+
+</body>
+
+</html>

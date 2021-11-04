@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Sign Up</title>
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Macondo|Molle:400i" rel="stylesheet">
+</head>
+
+<body>
+    <!-- jQuery -->
+    <!-- page script -->
+
+    <script></script>
+    <div class='header'>
+        header
+    </div>
+
+    <div id='eventContainer'>
+        <div id='event-name'>
+        </div>
+        <div id='event-org'>
+        </div>
+        <div id='event-date'>
+        </div>
+        <div id='event-time'>
+        </div>
+        <div id='event-address'>
+        </div>
+    </div>
+
+    <form>
+        Will you be available for the entire time of the event?
+        <br>
+        <input type="radio" name='avail' val='yes' checked>Yes
+        <br>
+        <input type="radio" name='avail' val='no'>No
+        <fieldset>
+            <legend>Your availability</legend>
+            What time will you be able begin?
+            <input type='time' id='arrive-time'>
+            <br> What time will you need to leave?
+            <input type='time' id='leave-time'>
+            <br> By typing my name in the field below, I agree to arrive at the time 
+            indicated and remain until the time I indicated,
+            until my services are no longer needed, or I sustain 
+            a life-threatening injury.
+            <br>
+            <input type='text' id='signature'>
+        </fieldset>
+        <button type="submit">Let's Do This!</button>
+    </form>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="./js/event-signup.js"></script>
+</body>
+
+</html>

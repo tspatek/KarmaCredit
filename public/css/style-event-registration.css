@@ -1,0 +1,43 @@
+h1 {
+    position: relative;
+    top: 50px;
+    font-family:'molle';
+    font-size: 50px;
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.4);
+}
+
+form {
+    position: relative;
+    top: 50px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 228, 196, 0.8);
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.4);
+    border: 2px solid black;
+    font-family: 'macondo';
+    font-weight: bolder;
+}
+
+fieldset{
+    width: 90%;
+}
+
+input{
+    margin-bottom: 8px;
+}
+
+textarea {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#submit-btn {
+    margin: 8px;
+    padding: 8px;
+    font-family: 'macondo';
+    font-weight: bolder;
+}

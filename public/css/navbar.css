@@ -1,0 +1,82 @@
+#navbar {
+    z-index: 3;
+    font-family: "macondo";
+    font-weight: bolder;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(-60deg,rgb(184, 150, 104), rgb(99, 53, 10), rgb(143, 83, 27));
+    box-shadow: 0 2px 8px rgba(0, 0 ,0,0.8);
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* #dropdown{
+    height: 100%;
+    width: 100%;
+} */
+
+#dropBtn {
+    position: absolute;
+    right: 50px;
+    top: 0;
+    background-color: rgba(0 0 0 0);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.dropBtn:hover, .dropBtn:focus {
+    background-color: #2980B9;
+}
+
+#loginLinks {
+    position: absolute;
+    left: 50px;
+}
+#dropdown {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0px;
+}
+
+#dropMenu {
+    display: none;
+    position: absolute;
+    right: 50px;
+    top: 60px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#dropMenu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#dropMenu a:hover {background-color: #ddd}
+
+.show {display:block;}
+
+h1 {
+    font-family: 'molle';
+    font-size: 72px;
+    text-shadow: 8px 8px 16px rgba(0,0,0,0.5);
+}

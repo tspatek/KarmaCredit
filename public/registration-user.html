@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+    <link rel='stylesheet' href='./css/style-events.css'>
+    <link rel='stylesheet' href='./css/style-event-registration.css'>
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Macondo|Molle:400i" rel="stylesheet">
+</head>
+
+<body>
+    <h1>User Registration</h1>
+    <form id="signup-form">
+        <fieldset>
+            <legend>
+                Login Info
+            </legend> Username (email)<br>
+            <input type="email" id="email" value="email@host.com">
+            <br>Password<br>
+            <input type="password" id="password" value="password">
+            <br> Confirm Password<br>
+            <input type="password" id="password-confirm" value="password">
+            <br> 
+        </fieldset>
+
+        <fieldset>
+            <legend> User Info
+            </legend>
+            First Name<br>
+            <input type="text" id="first-name" value="Carlos">
+            <br>Last Name<br>
+            <input type="text" id="last-name" value="Santana">
+            <br>Date of Birth<br>
+            <input type="date" id="birthdate" value="1953-04-04">
+            <br>Phone Number<br>
+            <input type="tel" id="phone" placeholder="222-2222" value="222-2222">
+            <br>
+
+            <fieldset>
+                <legend>
+                    Address </legend>
+                Street Name &amp; Number<br>
+                <input type="text" id="street" value="21 Jump St.">
+                <br> Apt./Suite Number<br>
+                <input type="text" id="street2" value="B2"> 
+                <br> City<br>
+                <input type="text" id='city' value="Compton"> 
+                <br> State<br>
+                <input type="text" id='state' value="CA">
+                <br> Zip Code<br>
+                <input type="text" id='zipcode' value="90059">
+            </fieldset>
+
+        </fieldset>
+        <button id='submit-btn' type='submit'>Submit</button>
+    </form>
+    <!-- jquery link -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- script link -->
+    <script src="./js/signup.js"></script>
+</body>
+
+</html>

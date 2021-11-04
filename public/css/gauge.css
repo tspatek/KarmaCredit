@@ -1,0 +1,302 @@
+   html {
+       height: 100%;
+   }
+   
+   body{
+        background-image: url('../images/tileable_wood_texture.png');
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    #dome{
+        position: absolute;
+        width: 400px;
+        height: 200px;
+    }
+    .meter-gauge {
+      /* content: ""; */
+      width: 400px;
+      height: 200px;
+      background-color: none;
+      background-image: url('../images/karmagaugeshadow.png');
+      background-size: 400px 200px;
+      margin: 10px 0 0 0;
+      z-index: 1;
+      /* border-top-left-radius: 300px;
+      border-top-right-radius: 300px; */
+    }
+
+    .needle {
+      content: "";
+      position: absolute;
+      margin-top: 35px;
+      margin-left: 185px;
+      border-right: 8px solid transparent;
+      border-left: 8px solid transparent;
+      border-bottom: 160px solid #1b2e27;
+      border-radius: 10px;
+      -webkit-transform-origin: 50% 100%;
+      -ms-transform-origin: 50% 98%;
+      transform-origin: 50% 95%;
+      transform: rotate(-90deg);
+      /* -webkit-animation: moveNeedle 8s; */
+      /* animation: moveNeedle 3s; */
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: 2;
+    }
+
+    /* @-webkit-keyframes moveNeedle {
+  0% {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  30% {
+    -webkit-transform: rotate(70deg);
+    transform: rotate(70deg);
+  }
+  50% {
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+  }
+  80% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+} */
+
+    @keyframes moveNeedle {
+      0% {
+        transform: rotate(0deg);
+      }
+      10% {
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+      }
+      30% {
+        -webkit-transform: rotate(70deg);
+        transform: rotate(70deg);
+      }
+
+      100% {
+        transform: rotate(0deg);
+      }
+
+    }
+
+    @keyframes shadowPulse {
+        0% {
+            box-shadow: 0px 0px 0px 0px white;
+        }
+    
+        100% {
+            box-shadow: 0px 0px 500px 0px white;
+        }
+    }
+    
+    .shadow-pulse {
+        animation-name: shadowPulse;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+    }
+
+
+    #myEventsBox, .buttonBox, #karmaMeterBox, .dashBtn{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 2% 2%;
+        padding: 2% 2%;
+        font-family: 'macondo swash caps';
+        width: 80%;
+        height:40%;
+    }
+    .buttonBox {
+        flex-direction: row;
+    }
+
+    #karmaJournal{
+        background-image: url("../images/journal3.png");
+        background-size: 100% 100%;
+    }
+    #findKarma{
+        background-image: url("../images/rug-red.png");
+        background-size: 100% 100%;
+    }
+
+    #spendKarma{
+        background-image: url("../images/rug-blue.png");
+        background-size: 100% 100%;
+    }
+
+    #karmaMeterBox{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0px;
+        margin: 0px;
+        margin-top: 80px;
+    }
+
+    .dashBtn{
+        content: "OOOO";
+        width: 20vw;
+        height: 13vw;
+        border: none;
+        font-size: 3vw;
+        font-size: 4vw;
+        color: black;
+        text-shadow: 0 0 0.5vw white;
+        text-align: center;
+        /* box-shadow: 4px 4px 3px rgb(95, 95, 95); */
+        font-weight: bold;
+    }
+
+    .dashBtn:hover{
+        cursor: pointer;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    #welcome{
+        position: relative;
+        top: 60px;
+    }
+
+    h2 {
+        font-family: 'molle';
+        padding: 10px;
+        margin: 0px;
+        font-size: 4vw;
+        color: rgb(0, 0, 0);
+        text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    #karmaScoreBoard {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 400px;
+        align-items: center;
+        text-align: center;
+        font-size: 30px;
+    }
+
+
+
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 2; /* Sit on top */
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 80%; 
+        font-family: 'caveat';
+        color: whitesmoke;
+        overflow: auto; 
+        background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,0.4); 
+        -webkit-animation-name: fadeIn; 
+        -webkit-animation-duration: 0.4s;
+        animation-name: fadeIn;
+        animation-duration: 0.4s
+    }
+    
+    .modal-content {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: rgb(235, 199, 155);
+        width: 100%;
+        height: 100%;
+        -webkit-animation-name: slideIn;
+        -webkit-animation-duration: 0.4s;
+        animation-name: slideIn;
+        animation-duration: 0.4s
+    }
+    
+    /* The Close Button */
+    .close {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover, .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .modal-header {
+        padding: 2px 16px;
+        background: linear-gradient(-60deg,rgb(184, 150, 104), rgb(99, 53, 10), rgb(143, 83, 27));
+        color: white;
+    }
+    .modal-footer {
+        padding: 2px 16px;
+        background: linear-gradient(-60deg,rgb(184, 150, 104), rgb(99, 53, 10), rgb(143, 83, 27));
+        color: white;
+        height:10%;
+        bottom: 0;
+    }
+    
+    .modal-body {
+        position: relative;
+        padding-top: 20px;
+        height: 100%;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        overflow-y: scroll;
+        color: black;
+
+    }
+    
+    
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+td {
+    margin: 20px;
+    padding: 20px;
+}
+
+#journal-table{
+    font-size: 40px;
+    border-collapse: collapse;
+}   
+#journal-table td, #journal-table th{
+    border-bottom: 3px black solid;
+} 

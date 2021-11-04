@@ -1,10 +1,3 @@
-
-//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-//GET: 
-// the current event, (it will be logged to the vol's 'journal')
-//the volunteer's name & id (will be used to identify the vol, and to put their name on the page)
-// I think that's all I need here.
-
 function getEventData() {
     $.ajax({ url: "/api/user/event", method: "GET" })
         .then(data => {
@@ -13,8 +6,6 @@ function getEventData() {
 };
 
 getEventData();
-//dummy array of volunteers
-//get the real data from the db. do the logic on the server side
 const Volunteer = function (name, id) {
     this.name = name;
     this.id = id;
@@ -48,13 +39,11 @@ const volunteers = [
 
 let volunteerObjects = [];
 
-//this creates a volunteerObject for each entry of the volunteers array.
 volunteers.forEach(e => {
     f = new Volunteer(e.name, e.id);
     volunteerObjects.push(f);
 });
 
-//popTable goes through the array of volunteers and populates the table with their names and buttons to assign them karma.
 function popTable() {
     volunteerObjects.forEach((entry, index) => {
         $("#karma-table").find('tbody')
@@ -77,18 +66,9 @@ function popTable() {
                     // console.log(entry.name, $(`.karma-btn[name='${entry.name}-karma']:checked`).val());
                     let name = entry.name;
                     let karma = $(`.karma-btn[name='${entry.name}-karma']:checked`).val();
-                    //$$$$$$$$$$$$$$$$$$$ POST method to post:
-                    //user id
-                    //local karma score
-                    //event id
-                    //these will be used to update:
-                    //user's database with an added event and associated karma
-                    //user's database with karma calculation (within server logic)
-                    //event's database with volunteers attended.
                 })
             );
     });
 };
 
-//calling functions to make the page go.
 popTable();

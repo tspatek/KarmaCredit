@@ -1,7 +1,7 @@
 {
   "name": "karmacredit",
-  "version": "1.0.0",
-  "description": "Karma actualized",
+  "version": "1.0",
+  "description": "Volunteer opportunies that earn users credit towards services and valuables",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,8 +11,8 @@
     "type": "git",
     "url": "git+https://github.com/tspatek/KarmaCredit.git"
   },
-  "author": "D Huffman, T Patek, J Rodriguez",
-  "license": "ISC",
+  "author": "Tiffany Patek",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/tspatek/KarmaCredit/issues"
   },

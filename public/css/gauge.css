@@ -15,36 +15,37 @@
         width: 400px;
         height: 200px;
     }
+
     .meter-gauge {
-      /* content: ""; */
-      width: 400px;
-      height: 200px;
-      background-color: none;
-      background-image: url('../images/karmagaugeshadow.png');
-      background-size: 400px 200px;
-      margin: 10px 0 0 0;
-      z-index: 1;
-      /* border-top-left-radius: 300px;
-      border-top-right-radius: 300px; */
+        /* content: ""; */
+        width: 400px;
+        height: 200px;
+        background-color: none;
+        background-image: url('../images/karmagaugeshadow.png');
+        background-size: 400px 200px;
+        margin: 10px 0 0 0;
+        z-index: 1;
+        /* border-top-left-radius: 300px;
+        border-top-right-radius: 300px; */
     }
 
     .needle {
-      content: "";
-      position: absolute;
-      margin-top: 35px;
-      margin-left: 185px;
-      border-right: 8px solid transparent;
-      border-left: 8px solid transparent;
-      border-bottom: 160px solid #1b2e27;
-      border-radius: 10px;
-      -webkit-transform-origin: 50% 100%;
-      -ms-transform-origin: 50% 98%;
-      transform-origin: 50% 95%;
-      transform: rotate(-90deg);
-      /* -webkit-animation: moveNeedle 8s; */
-      /* animation: moveNeedle 3s; */
-      -webkit-animation-iteration-count: infinite;
-      animation-iteration-count: 2;
+        content: "";
+        position: absolute;
+        margin-top: 35px;
+        margin-left: 185px;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+        border-bottom: 160px solid #1b2e27;
+        border-radius: 10px;
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 98%;
+        transform-origin: 50% 95%;
+        transform: rotate(-90deg);
+        /* -webkit-animation: moveNeedle 8s; */
+        /* animation: moveNeedle 3s; */
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: 2;
     }
 
     /* @-webkit-keyframes moveNeedle {

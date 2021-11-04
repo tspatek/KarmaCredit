@@ -3,6 +3,6 @@ CREATE DATABASE volunteers_db;
 
 CREATE TABLE IF NOT EXISTS users;
 INSERT INTO users
-VALUES ("Turd", "Ferguson", "tferg@mess.com", "uncle", 3, 1940-07-04, 400);
+VALUES ("Jane", "Doe", "jdoes@example.com", "aunt", 3, 1940-07-04, 400);
 
-CREATE TABLE IF NOT EXISTSgit st
+CREATE TABLE IF NOT EXISTS git st
